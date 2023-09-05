@@ -4,7 +4,7 @@ jobs:
   hello_world:
     runs-on: ubuntu-latest
     steps:
-      - name: push changes to github
+      - name: pull changes to VPS
         uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ secrets.HOST }}
