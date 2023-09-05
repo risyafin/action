@@ -12,5 +12,5 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            cd ~/coba
+            cd ~/Projects/github-action-example2/action
             git pull origin master
