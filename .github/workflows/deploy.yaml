@@ -13,4 +13,4 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd ~/coba
-            git pull origin main
+            git pull origin master
