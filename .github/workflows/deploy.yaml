@@ -1,0 +1,16 @@
+name: Deploy VPS
+on: [push]
+jobs:
+  hello_world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: push changes to github
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: |
+            cd ~/coba
+            git pull origin main
